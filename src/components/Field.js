@@ -82,25 +82,32 @@ class Field extends React.Component{
                         for(let k=0;k<attach[i].attachments[j].fields.length;k++)
                         {
                             
-                             function renderValue()
-                             {
+                            //  function renderValue()
+                            //  {
                            
-                             const data=attach[i].attachments[j].fields.map((val)=>{
-                                 return(<div>
-                               <div>{val.value}</div>
-                                     </div>)
-                              })
+                            //  const data=attach[i].attachments[j].fields.map((val)=>{
+                            //      return(<div>
+                            //    <div>{val.value}</div>
+                            //          </div>)
+                            //   })
                            
-                             return (<div>{data}</div>)
+                            //  return (<div>{data}</div>)
                            
-                             }
+                            //  }
                             const field=attach[i].attachments[j].fields.map((field)=>{
+
+                                
                                 return(<div>
-                                {field.title}<br></br>
-                                {field.value}
+                                {field.title}
+                                {/* {field.short ? 'yes':'no'} */}
+                                {/* @media  screeonlyn and (device-width: 600px) and (orientation: landscape)  */}
+                               {/* { field.short ?<div style={{orientation: `${attach[i].attachments[j].fields_orientation}`}}>{field.value}</div>:<div style={{orientation:attach[i].attachments[j].fields_orientation}}>{field.value}</div>} */}
+                               
+                               { field.short ? ' : ' + field.value + ' ' : <br /> }
+                               
                                 </div>)
                             })
-                            return (<div onClick={()=>renderValue()}>{field}</div>)
+                            return (<div>{field}</div>)
                         }
                        
                     }

@@ -15,7 +15,9 @@ class Footer extends React.Component{
                     {
                         const foot=attach[i].attachments[j].footer
                         const foot_url=attach[i].attachments[j].footer_url
+                        const foot_icon=attach[i].attachments[j].footer_icon
                         return(<p style={{textAlign:"right"}}>
+                        <img src={foot_icon}></img>
                             <a href={foot_url}>{foot}</a>
                             </p>
                             

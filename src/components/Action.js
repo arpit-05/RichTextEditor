@@ -15,12 +15,12 @@ class Action extends React.Component{
                  for(let k=0;k<attach[i].attachments[j].actions.length;k++)
                  {
                     const data=attach[i].attachments[j].actions.map((action)=>{
-                        return(<div>
-                            <input type={action.type} value={action.text}></input>
-                        </div>)
+                        return(
+                            <input type={action.type} value={action.text} style={{ backgroundImage: `url(${action.icon})` }}></input>
+                        )
                     })
 
-                     return (<div><div style={{float:"right"}}>{data}</div><br/><br/></div>)
+                     return (<div><p style={{float:"right"}}>{data}</p><br/><br/></div>)
                  }
              }
          }   
