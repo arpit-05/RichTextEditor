@@ -6,6 +6,7 @@ class Field extends React.Component{
     }
    
     renderField(){
+        
         const attach=this.props.dummy
         for(let i=0;i<attach.length;i++){
             if(attach[i].hasOwnProperty('attachments'))
@@ -116,7 +117,7 @@ class Field extends React.Component{
         }
     }
     render(){
-        return(<div>
+        return(<div className="fields">
              {/* {this.renderValue()} */}
             {this.renderField()}
             {this.renderFields()}

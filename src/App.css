@@ -1,3 +1,147 @@
+html, body, #root{
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+ margin: auto;
+ height: 100%;
+  
+}
+ 
+
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  
+}
+
+.outer{
+width: 100%;
+max-width: 600px;
+padding: 0 20px;
+
+
+}
+.author img{
+width: 16px;
+height: 16px;
+margin-right: 10px;
+
+}
+.title_text{
+  border-bottom: 1px solid rgba(241, 241, 241, 1);
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.title_text img{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  
+}
+
+
+/* Body text CSS  */
+.text_body{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.text_body p{
+  margin-top: 0px;
+  margin-left: 10px;
+  
+}
+
+.text_body img{
+  width: 100%;
+  max-width: 350px;
+  height: 250px;
+}
+.text_body .img_body {
+font-size: 35px;
+}
+
+.Wrapper{
+  border: 1px solid  rgba(241, 241, 241, 1);
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  
+}
+/* .text_body img{
+  width: 100%; 
+} */
+
+.fields{
+  margin-top: 20px;
+  background: rgba(241, 241, 241, 1);
+  padding: 20px;
+}
+
+/* Action input css */
+
+.Action{
+  display: inline-block;
+  position: relative;
+}
+.Action input{
+  width: 112px;
+  height: 35px;
+  margin-right: 10px;
+  padding-left: 30px;
+  border: 0px;
+  
+}
+
+.Action:last-child input[type="button"]{
+  background-color: rgba(55, 85, 146, 1);
+  color: white;
+}
+
+input[type="button"]{
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 13% 50% ;
+}
+
+.talkbubble{
+
+  position: relative;
+  width: 300px;
+  height: auto;
+  
+  padding: 10px;
+  border-radius: 5px;
+  border: solid rgba(241, 241, 241, 1);
+  background: rgba(241, 241, 241, 1);
+  margin-bottom: 20px;
+}
+
+.talkbubble:before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: -3px;
+  width: 0;
+  height: 0;
+  /* border-top: 13px solid transparent; */
+  border-right: 22px solid rgba(241, 241, 241, 1);;
+  border-bottom: 22px solid transparent;
+  
+}
+
+
+
 .App {
   text-align: center;
 }
@@ -31,3 +175,14 @@
     transform: rotate(360deg);
   }
 }
+
+/* .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box div {
+  width: 100px;
+  height: 100px;
+} */

@@ -16,7 +16,10 @@ class Action extends React.Component{
                  {
                     const data=attach[i].attachments[j].actions.map((action)=>{
                         return(
-                            <input type={action.type} value={action.text} style={{ backgroundImage: `url(${action.icon})` }}></input>
+                            <div className="Action"> 
+                            <input  type={action.type} value={action.text} style={{ backgroundImage: `url(${action.icon})` }}
+></input>
+                        </div>
                         )
                     })
 

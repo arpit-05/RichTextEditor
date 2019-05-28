@@ -1,4 +1,6 @@
 import React from 'react'
+import Person from "@material-ui/icons/Person";
+import ChatBubble from 'react-chat-bubble';
 
 class Text extends React.Component{
 constructor(props){
@@ -27,7 +29,12 @@ render(){
     
         
     
-    return(<div>{this.tile()}</div>)
+    return(
+       
+    <div className="talkbubble"> {this.tile() }</div>
+    
+    
+    )
 }
 }
 export default Text
